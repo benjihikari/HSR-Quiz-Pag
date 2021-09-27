@@ -1,0 +1,233 @@
+/*Variables*/
+:root {
+    --first-blue: #70c2e8;
+    --green-first: #297;
+    --green-second: #3a8;
+    --light-green: #c1dfcd;
+    --primary-black: #333;
+    --just-black: #100000;
+    --just-white: #fff;
+    --t-orange: #f26e2d;
+    --t-grey: #8c8c8c;
+    --dark-orange: #221b15;
+}
+
+/*Estilos*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--t-grey);
+	font-size: 62.5%;
+	font-family: "Oxygen", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+header {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--t-orange);
+    border-bottom: 2.5px solid var(--dark-orange);
+}
+header img {
+    width: 120px;
+    border-radius: 15px;
+}
+.header__title {
+    width: 40%;
+    height: auto;
+}
+.header__title h1 {
+    color: var(--just-white);
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    text-align: start;
+    text-shadow: 3px 4px var(--primary-black);
+}
+main {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+}
+.game {
+    width: 94%;
+    min-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 18px;
+    display: block;
+    background-color: var(--light-green);
+}
+.game__title {
+    min-width: 288px;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 16px;
+    padding: 12px 9px;
+    text-align: center;
+}
+.game__title h2 {
+    color: var(--just-black);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px var(--t-orange);
+}
+.game__title h2 span {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("https://icoden.ekikabe.net/images/icoden_r/R_JREXP_E5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.game__title p {
+    color: var(--primary-black);
+    font-size: 1.1rem;
+    font-weight: 800;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px var(--t-orange);
+}
+.Quiz {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: start;
+}
+.question{
+    color: var(--just-black);
+    font-size: 1.2rem;
+	font-weight: bold;
+    line-height: 1.5rem;
+}
+.answers {
+    color: var(--primary-black);
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+.answers input {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.button {
+	font-family: "Oxygen", sans-serif;
+	font-size: 20px;
+	background-color: var(--green-first);
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+#submit:hover{
+	background-color: var(--green-second);
+    box-shadow: 0 4px 8px var(--t-grey);
+}
+footer {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--first-blue);
+    border-top: 2.5px solid var(--dark-orange);
+}
+footer img {
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.footer-media {
+    width: 100%;
+    height: 100px;
+    padding: 12px 18px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+.footer-media ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+}
+.footer-media li {
+    margin: 10px 18px;
+}
+.footer-media a {
+    color: var(--just-white);
+    text-shadow: 1px 2px var(--just-black);
+}
+.social-media__logos {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.facebook {
+    background-image: url("https://cdn.icon-icons.com/icons2/2224/PNG/512/facebook_logo_icon_134446.png");
+    border-radius: 50px;
+    border: 2px solid var(--just-white);
+}
+.twitter {
+    background-image: url("https://w7.pngwing.com/pngs/529/867/png-transparent-computer-icons-logo-twitter-miscellaneous-blue-logo-thumbnail.png");
+    border-radius: 50px;
+}
+.instagram {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/87/87390.png");
+}
+.github {
+    background-image: url("https://e7.pngegg.com/pngimages/914/758/png-clipart-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper.png");
+    border-radius: 50px;
+}
+
+@media (min-width: 400px) {
+    .header__title h1 {
+        font-size: 2.5rem;
+    }
+    .game__title h2 {
+        font-size: 1.6rem;
+    }
+    .game__title p {
+        font-size: 1.2rem;
+    }
+    .question{
+        font-size: 1.3rem;
+    }
+    .answers {
+        font-size: 1.1rem;
+    }
+    .footer-media ul {
+        font-size: 1.1rem;
+    }
+}
